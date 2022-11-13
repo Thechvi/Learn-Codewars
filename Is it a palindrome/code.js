@@ -2,7 +2,7 @@ function isPalindrome(x) {
 	let newStr1 = x.toUpperCase();
 	let newStr2 = newStr1.split('').reverse().join('');
 	if (newStr1 == newStr2) {
-		 return true
+		return true
 		console.log(true)
 	}
 	else {
@@ -18,3 +18,4 @@ isPalindrome('Bob');
 isPalindrome('Madam');
 isPalindrome('AbBa');
 isPalindrome('');
+
