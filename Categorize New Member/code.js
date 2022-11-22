@@ -1,18 +1,9 @@
 
-function openOrSenior(data) {
-	let result = [];
-	for (i = 0; i < data.length; i++) {
-		for (j = 0; j < data[i].length; j++) {
-			if (data[i][0] > 55 && data[i][1] > 7) {
-				console.log(data[i][0], data[i][1])
-				return data[i] = "Senior"
-			}
-			else {
-				return data[i] = "Open"
-			}
-		}
+function openOrSenior(data){
+	function determineMembership(member){
+	  console.log(member[0] >= 55 && member[1] > 7) ? 'Senior' : 'Open';
 	}
+	console.log(data.map(determineMembership));
+  }
 
-	return result.push(data[i])
-}
-console.log(openOrSenior([45, 12], [55, 21], [19, -2], [104, 20])) 
+  openOrSenior([45, 12],[55,21],[19, -2],[104, 20])
