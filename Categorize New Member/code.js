@@ -8,8 +8,4 @@
 
 //   openOrSenior([45, 12],[55,21],[19, -2],[104, 20])
 
-const promise = new Promise(res => {
-	setTimeout(() =>res((2), 0));
-	res(1);
-});
-promise.then(res=> console.log(res))
+
